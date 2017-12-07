@@ -1,0 +1,21 @@
+<script>
+
+    const l = console.log
+
+
+
+    function createPlayer() {
+        return {
+            sayHello: function() {
+                alert('Hello World!' + Math.random())
+            }
+        }
+    }
+
+    let player = createPlayer()
+    const list = ['Hello', 'World!', player]
+    l(list.length, list)
+
+    player.sayHello()
+
+</script>
